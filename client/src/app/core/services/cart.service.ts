@@ -11,9 +11,10 @@ import { HttpClient } from '@angular/common/http';
 // Models
 import { ServerResponse } from '../models/server-response.model';
 import { Cart } from '../models/cart.model';
+import { environment } from '../../../environments/environment';
 
-const baseUrl = 'http://localhost:8000/user/cart';
-const getCartSizeEndpoint = 'http://localhost:8000/cart/getSize';
+const baseUrl = environment.apiUrl + '/user/cart';
+const getCartSizeEndpoint = environment.apiUrl + '/cart/getSize';
 const addToCartEndpoint = '/add/';
 const removeFromCartEndpoint = '/delete/';
 const checkoutEndpoint = '/checkout';

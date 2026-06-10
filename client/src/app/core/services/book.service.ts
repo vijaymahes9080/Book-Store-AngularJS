@@ -10,8 +10,9 @@ import { HttpClient } from '@angular/common/http';
 // Models
 import { ServerResponse } from '../models/server-response.model';
 import { Book } from '../models/book.model';
+import { environment } from '../../../environments/environment';
 
-const domain = 'http://localhost:8000';
+const domain = environment.apiUrl;
 const getSingleBookEndpoint = domain + '/book/details/';
 const createBookEndpoint = domain + '/book/add';
 const editBookEndpoint = domain + '/book/edit/';

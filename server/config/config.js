@@ -1,8 +1,8 @@
 module.exports = {
     development: {
-        connectionString: 'mongodb://localhost:27017/BookStore'
+        connectionString: process.env.MONGODB_URI || 'mongodb://localhost:27017/BookStore'
     },
     production: {
-
+        connectionString: process.env.MONGODB_URI
     }
 };

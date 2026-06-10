@@ -11,8 +11,9 @@ import { HttpClient } from '@angular/common/http';
 import { ServerResponse } from '../models/server-response.model';
 import { User } from '../models/user.model';
 import { Receipt } from '../models/receipt.model';
+import { environment } from '../../../environments/environment';
 
-const baseUrl = 'http://localhost:8000/user';
+const baseUrl = environment.apiUrl + '/user';
 const registerEndpoint = baseUrl + '/register';
 const loginEndpoint = baseUrl + '/login';
 const profileEndpoint = baseUrl + '/profile/';
