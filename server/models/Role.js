@@ -49,8 +49,8 @@ module.exports.init = () => {
                 let salt = ENCRYPTION.generateSalt();
                 let passwordHash = ENCRYPTION.generateHashedPassword(salt, '123');
                 let newUser = {
-                    username: 'jeliozver',
-                    email: 'jeliozver@gmail.com',
+                    username: 'vijaymahes9080',
+                    email: 'vijaymahes9080@users.noreply.github.com',
                     salt: salt,
                     password: passwordHash,
                     roles: [newRole._id]

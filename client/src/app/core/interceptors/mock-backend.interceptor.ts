@@ -74,8 +74,8 @@ export class MockBackendInterceptor implements HttpInterceptor {
       };
       const defaultUser = {
         _id: 'user_123',
-        username: 'jeliozver',
-        email: 'jeliozver@gmail.com',
+        username: 'vijaymahes9080',
+        email: 'vijaymahes9080@users.noreply.github.com',
         isAdmin: false,
         isBlocked: false,
         avatar: 'https://i.imgur.com/7m7fOma.jpg',
@@ -84,7 +84,7 @@ export class MockBackendInterceptor implements HttpInterceptor {
       localStorage.setItem('mock_users', JSON.stringify([defaultAdmin, defaultUser]));
       localStorage.setItem('mock_passwords', JSON.stringify({
         'admin': 'admin',
-        'jeliozver': '123'
+        'vijaymahes9080': '123'
       }));
     }
 
