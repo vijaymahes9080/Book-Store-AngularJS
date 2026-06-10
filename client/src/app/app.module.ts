@@ -17,6 +17,7 @@ import { HomeComponent } from './components/landing/home/home.component';
 
 // Interceptors
 import { JwtInterceptor } from './core/interceptors/jwt.interceptor';
+import { MockBackendInterceptor } from './core/interceptors/mock-backend.interceptor';
 import { SuccessInterceptor } from './core/interceptors/success.interceptor';
 import { ErrorInterceptor } from './core/interceptors/error.interceptor';
 
@@ -41,6 +42,11 @@ import { ErrorInterceptor } from './core/interceptors/error.interceptor';
     {
       provide: HTTP_INTERCEPTORS,
       useClass: JwtInterceptor,
+      multi: true
+    },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: MockBackendInterceptor,
       multi: true
     },
     {
